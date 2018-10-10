@@ -48,15 +48,6 @@ public class Player : MonoBehaviour
             }
 
         }
-
-        float Dirx = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
-
-        transform.position = new Vector2(transform.position.x + Dirx, transform.position.y);
-
-        if (Input.GetKeyDown("space"))
-        {
-            transform.Translate(Vector3.up * 100 * Time.deltaTime, Space.World);
-        }
     }
 }
 
